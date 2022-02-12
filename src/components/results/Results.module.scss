@@ -1,0 +1,58 @@
+.container {
+  padding: 40px 20px;
+}
+
+.headTitle {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 32px;
+}
+
+.sliderWrapper {
+  padding: 0 28px;
+}
+
+.slider {
+  padding: 16px;
+  border: 2px solid #20c5a0;
+  border-radius: 8px;
+  box-shadow: 2px -2px 4px rgba(0, 175, 135, 0.1),
+    -4px 4px 4px rgba(0, 175, 135, 0.25);
+
+  margin: 0 auto;
+}
+
+.card {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-bottom: 32px;
+}
+
+.cardTitle {
+  margin-bottom: 4px;
+}
+
+.cardContent {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.imageList {
+  display: flex;
+}
+
+.imageItem p {
+  margin-bottom: 4px;
+}
+
+.imageItem:first-child {
+  margin-right: 12px;
+}

@@ -1,0 +1,15 @@
+:root {
+  --swiper-navigation-size: 12px;
+  --swiper-theme-color: #000000;
+  --swiper-pagination-color: #00af87;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #20c5a0;
+}
+
+.swiper {
+  padding-bottom: 35px;
+}
