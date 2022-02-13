@@ -2,4 +2,9 @@
   font-size: 40px;
   line-height: 45px;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 54px;
+  }
 }

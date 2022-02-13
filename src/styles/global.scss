@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 html,
@@ -16,8 +17,6 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #15141d;
-
-  box-sizing: border-box;
 }
 
 p {
