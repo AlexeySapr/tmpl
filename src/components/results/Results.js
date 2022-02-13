@@ -21,26 +21,28 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 const Results = () => {
   return (
     <Container>
-      <Title text={'Результаты наших клиентов'} />
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className={s.resultSwiper}
-      >
-        <SwiperSlide>
-          <ResultCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ResultCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ResultCard />
-        </SwiperSlide>
-      </Swiper>
+      <div className={s.background}>
+        <Title text={'Результаты наших клиентов'} />
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className={s.resultSwiper}
+        >
+          <SwiperSlide>
+            <ResultCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ResultCard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ResultCard />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </Container>
   );
 };
