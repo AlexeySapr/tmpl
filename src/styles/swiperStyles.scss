@@ -31,14 +31,5 @@
 }
 
 .swiper {
-  padding-bottom: 35px;
-  box-sizing: border-box;
-
-  @media (max-width: 768px) {
-    max-width: 425px;
-  }
-
-  @media (min-width: 769px) {
-    max-width: 560px;
-  }
+  padding-bottom: 45px;
 }

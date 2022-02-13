@@ -1,4 +1,6 @@
 import React from 'react';
+import * as s from './Results.module.scss';
+
 import ResultCard from '../resultCard/ResultCard';
 import Title from '../title/Title';
 import Container from '../container/Container';
@@ -27,6 +29,7 @@ const Results = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className={s.resultSwiper}
       >
         <SwiperSlide>
           <ResultCard />

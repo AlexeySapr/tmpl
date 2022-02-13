@@ -27,15 +27,24 @@ const Reviews = () => {
     <Container contStyles={containerBaseStyles}>
       <Title text={'Отзывы'} />
       <Swiper
-        slidesPerView={1}
-        spaceBetween={15}
+        slidesPerView={2}
+        spaceBetween={32}
         cssMode={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
         modules={[Pagination, Mousewheel, Keyboard]}
-        className={s.mySwiper}
+        className={s.reviewSwiper}
       >
+        <SwiperSlide>
+          <ReviewCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ReviewCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ReviewCard />
+        </SwiperSlide>
         <SwiperSlide>
           <ReviewCard />
         </SwiperSlide>
