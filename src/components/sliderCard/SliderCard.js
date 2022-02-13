@@ -2,9 +2,6 @@ import React from 'react';
 
 import * as s from './SliderCard.module.scss';
 
-// import womanBefore from '../../images/woman-before.jpg';
-// import womanAfter from '../../images/woman-after.jpg';
-
 import womanBefore from '../../images/woman-before-pc.jpg';
 import womanAfter from '../../images/woman-after-pc.jpg';
 
