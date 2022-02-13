@@ -43,6 +43,12 @@
   margin-bottom: 4px;
 }
 
+.imageItem img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .imageItem:first-child {
   margin-right: 12px;
 }
