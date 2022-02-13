@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as s from './Results.module.scss';
+import * as s from './SliderCard.module.scss';
 
 import womanBefore from '../../images/woman-before.jpg';
 import womanAfter from '../../images/woman-after.jpg';
