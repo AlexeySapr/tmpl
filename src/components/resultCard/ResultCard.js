@@ -1,11 +1,11 @@
 import React from 'react';
 
-import * as s from './SliderCard.module.scss';
+import * as s from './ResultCard.module.scss';
 
 import womanBefore from '../../images/woman-before-pc.jpg';
 import womanAfter from '../../images/woman-after-pc.jpg';
 
-const SliderCard = () => {
+const ResultCard = () => {
   return (
     <div className={s.sliderWrapper}>
       <div className={s.slider}>
@@ -32,4 +32,4 @@ const SliderCard = () => {
   );
 };
 
-export default SliderCard;
+export default ResultCard;

@@ -1,5 +1,6 @@
 import React from 'react';
-import SliderCard from '../sliderCard/SliderCard';
+
+import ReviewCard from '../reviewCard/ReviewCard';
 import Title from '../title/Title';
 import Container from '../container/Container';
 
@@ -8,16 +9,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '../../styles/swiperStyles.scss';
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import { Pagination, Mousewheel, Keyboard } from 'swiper';
 
 const Reviews = () => {
   const containerBaseStyles = {
+    // backgroundColor: '#dad5ef',
     backgroundColor: '#000000',
     color: '#ffffff',
   };
@@ -26,21 +27,22 @@ const Reviews = () => {
     <Container contStyles={containerBaseStyles}>
       <Title text={'Отзывы'} />
       <Swiper
+        slidesPerView={1}
+        spaceBetween={15}
         cssMode={true}
-        navigation={true}
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Pagination, Mousewheel, Keyboard]}
       >
         <SwiperSlide>
-          <SliderCard />
+          <ReviewCard />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderCard />
+          <ReviewCard />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderCard />
+          <ReviewCard />
         </SwiperSlide>
       </Swiper>
     </Container>

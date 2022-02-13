@@ -1,0 +1,34 @@
+.imgWrapper {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.imgWrapper img {
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.slider {
+  padding: 24px;
+  border: 2px solid #20c5a0;
+  border-radius: 8px;
+  box-shadow: 2px -2px 4px rgba(0, 175, 135, 0.1),
+    -4px 4px 4px rgba(0, 175, 135, 0.25);
+
+  margin: 0 auto;
+}
+
+.card {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.date {
+  text-align: end;
+}
+
+.cardContent {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}

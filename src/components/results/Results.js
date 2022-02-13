@@ -1,5 +1,5 @@
 import React from 'react';
-import SliderCard from '../sliderCard/SliderCard';
+import ResultCard from '../resultCard/ResultCard';
 import Title from '../title/Title';
 import Container from '../container/Container';
 
@@ -29,13 +29,13 @@ const Results = () => {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
       >
         <SwiperSlide>
-          <SliderCard />
+          <ResultCard />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderCard />
+          <ResultCard />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderCard />
+          <ResultCard />
         </SwiperSlide>
       </Swiper>
     </Container>
