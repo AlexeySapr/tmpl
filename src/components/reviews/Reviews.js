@@ -1,4 +1,5 @@
 import React from 'react';
+import * as s from './Reviews.module.scss';
 
 import ReviewCard from '../reviewCard/ReviewCard';
 import Title from '../title/Title';
@@ -18,7 +19,6 @@ import { Pagination, Mousewheel, Keyboard } from 'swiper';
 
 const Reviews = () => {
   const containerBaseStyles = {
-    // backgroundColor: '#dad5ef',
     backgroundColor: '#000000',
     color: '#ffffff',
   };
@@ -34,6 +34,7 @@ const Reviews = () => {
         mousewheel={true}
         keyboard={true}
         modules={[Pagination, Mousewheel, Keyboard]}
+        className={s.mySwiper}
       >
         <SwiperSlide>
           <ReviewCard />
