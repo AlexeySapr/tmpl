@@ -30,7 +30,7 @@ const Results = () => {
           mousewheel={true}
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-          className={s.resultSwiper}
+          className="resultSwiper"
         >
           <SwiperSlide>
             <ResultCard />

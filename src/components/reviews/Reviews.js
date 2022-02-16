@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 import '../../styles/swiperStyles.scss';
 
 // import required modules
-import { Pagination, Mousewheel, Keyboard } from 'swiper';
+import { Pagination, Keyboard } from 'swiper';
 
 const Reviews = () => {
   const containerBaseStyles = {
@@ -27,23 +27,38 @@ const Reviews = () => {
     <Container contStyles={containerBaseStyles}>
       <Title text={'Отзывы'} />
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={32}
-        cssMode={true}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+        }}
         pagination={true}
-        mousewheel={true}
         keyboard={true}
-        modules={[Pagination, Mousewheel, Keyboard]}
+        modules={[Pagination, Keyboard]}
         className={s.reviewSwiper}
       >
         <SwiperSlide>
-          <ReviewCard />
+          <ReviewCard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis varius eros ac rhoncus. Phasellus volutpat sem leo, sed pulvinar lacus gravida." />
         </SwiperSlide>
         <SwiperSlide>
-          <ReviewCard />
+          <ReviewCard
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+        varius eros ac rhoncus."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <ReviewCard />
+          <ReviewCard
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+        varius eros ac rhoncus. Phasellus volutpat sem leo, sed pulvinar lacus
+        gravida at. Proin mollis varius eros ac rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis
+        varius eros ac rhoncus. Phasellus volutpat sem leo, sed pulvinar lacus
+        gravida at. Proin mollis varius eros ac rhoncus."
+          />
         </SwiperSlide>
         <SwiperSlide>
           <ReviewCard />
